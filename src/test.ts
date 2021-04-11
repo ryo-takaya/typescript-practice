@@ -1,2 +1,2 @@
-const message:string = 'string'
+const message:boolean = false
 console.log(message)

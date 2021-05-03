@@ -23,6 +23,9 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "ts-node-dev": "^1.1.6"
+    "eslint": "^7.25.0",
+    "install": "^0.13.0",
+    "ts-node-dev": "^1.1.6",
+    "yarn": "^1.22.10"
   }
 }

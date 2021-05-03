@@ -1,2 +1,8 @@
-const message:boolean = false
-console.log(message)
+import axios from 'axios'
+export {}
+
+type array = (number[]|string[])[]
+
+type a = string & number
+
+const s: a = 9

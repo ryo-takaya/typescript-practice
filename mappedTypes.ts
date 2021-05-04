@@ -26,5 +26,3 @@ k[0] = 3
 type Optional<T> = {
     [P in keyof T]?: T[P] | null
 }
-
-type Test = name in Profile

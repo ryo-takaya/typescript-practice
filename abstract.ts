@@ -1,7 +1,13 @@
 export {}
 
 abstract class Animal{
+
+    private aaa:string = 'kjkj'
+
     abstract cry():string;
+    test(){
+        return 'kjkjkjk'
+    }
 }
 
 class Lion extends Animal{

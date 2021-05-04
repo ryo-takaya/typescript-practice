@@ -1,14 +1,18 @@
 export {}
 
-
-class Person{
-    private readonly name:string
-
-    constructor(name:string){
-      this.name = name
-    }
-
-    
+type Profile = {
+   readonly name:string
+    age:number
 }
 
-const test:Person = new Person('aaaa')
+const me:Profile = {
+    name:'ryo',
+    age:90
+}
+
+type Onry<T> = {
+   readonly [P in keyof T]: T[P]
+}
+
+type s = Onry<Profile>
+const l = {name:'ryo',age:90} as const

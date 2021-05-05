@@ -1,3 +1,13 @@
 export {}
 
-let profile:{name:string, age:number|null} = {name:'ryo', age:null}
+type Test = {
+    name:string
+    age:number
+    child: boolean
+}
+
+type Option<T> = {
+   [I in keyof T]?: T[I]
+}
+
+type k = Option<Test>

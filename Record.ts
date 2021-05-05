@@ -24,3 +24,9 @@ const l:re = {
 }
 
 type CovidJapanInfo = Record<Pre, CovidInfo>
+
+type Re<T extends keyof any,P> = {
+  [I in T]:P
+}
+
+type Ori = Re<Pre, CovidInfo>
